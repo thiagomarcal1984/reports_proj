@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
+
+{% block scripts %}
+    <script src="{% static 'sales/home.js' %}" defer></script>
+{% endblock scripts %}
 
 {% block title %}
 Home
