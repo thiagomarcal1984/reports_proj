@@ -5,13 +5,21 @@
 
   <title>PDF {{obj.name}}</title>
   <style>
-    /* .image {
+    .image {
         width: 100%;
         height: auto;
-    } */
+    }
   </style>
 </head>
 <body>
-    {{ hello }}
+    <h1>{{ obj.name }}</h1>
+    <hr/>
+    <img src="{{ obj.image.path }}" class="image">
+    <br>
+    <h3>Remarks</h3>
+    <p>{{ obj.remarks }}</p>
+    <hr/>
+    <p>author: <b>{{ obj.author.user.username }}</b></p>
+    <p>created: <b>{{ obj.created }}</b></p>
 </body>
 </html>
