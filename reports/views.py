@@ -3,6 +3,7 @@ from profiles.models import Profile
 from django.http import JsonResponse
 from .utils import get_report_image
 from .models import Report
+from .forms import ReportForm
 from django.views.generic import ListView, DetailView, TemplateView
 
 from django.conf import settings
